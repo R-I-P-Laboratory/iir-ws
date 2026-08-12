@@ -205,7 +205,7 @@ class DalyBMSNode(Node):
 
         return can_id == expected_id
 
-    def request_single_frame(self, data_name, timeout=0.25):
+    def request_single_frame(self, data_name, timeout=1.0):
 
         self.send_request(data_name)
 
@@ -229,7 +229,7 @@ class DalyBMSNode(Node):
         self,
         data_name,
         expected_frames,
-        timeout=0.4
+        timeout=1.0
     ):
 
         self.send_request(data_name)
