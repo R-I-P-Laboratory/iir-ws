@@ -59,6 +59,7 @@ install(DIRECTORY src/
 )
 
 install(PROGRAMS
+  scripts/joy_teleop.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
